@@ -1,0 +1,21 @@
+Note: I'm sorting these by paragraphs in the README to avoid confusion
+1. N/A
+2.  #include <stdio.h>
+3. printf doesnt use a file stream as the first paramater, but fprintf does.
+4. Given from man: The functions printf() and vprintf()  write  output to stdout, the standard output stream; fprintf() and vfprintf() write output to the given output stream
+5. Hello world! I am Thomas
+6. System calls is section 2
+7. #include <unistd.h>
+8. N/A
+9.
+#include <stdio.h>
+#include <unistd.h>
+
+int main( int argc, char* argv[] ){ 
+   write(STDOUT_FILENO,"Hello world! I am Thomas\n", 25);
+
+}
+
+10. After the output there is a bunch of random garbage that is produced probably because its in adj memory to the output.
+11. I would use the C library when I had a bunch of different OS working on the same project, and I would use the OS system call when I am only working on one computer or a few that I know can run the command.
+12. hello.sh is completed!
